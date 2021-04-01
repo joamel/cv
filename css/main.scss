@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+:root{
+    --primary-color:#007Af3;
+    --secondary-color: #006bd6;
+}
+
+body {
+    background: white;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+}
+
+.subhead {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: 0.1em;
+}
+
+
+.left-col {
+    h1 {
+        font-size: 2em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+
+    img {
+        display: inline-block;
+        border-radius: 1em;
+    }
+}
+
+.right-col {
+    display: block;
+    text-align: center;
+}
+
+a {
+    color:#444444;
+    text-decoration: none;
+}
+
+.links {
+    margin: 0;
+    //height: 70%;
+
+    li {
+        display: inline-block;
+
+        img {
+            display: flex;
+            justify-content:space-evenly;
+            background: none;
+            //position: unset;
+            height: 3em;
+            border-radius: 100%;
+            margin: 2em;
+        }
+        
+        h2 {
+            margin-top: 1.55em;
+            display: none;
+        }
+    }
+}
+
+section.features-section {
+    background-color: #20272E;
+    color: white;
+}
+
+ul.features-list {
+    margin: 0;
+    padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    li {
+        font-size: 1.1em;
+        margin-bottom: .5em;
+        margin-left: 2em;
+        position: relative;
+    }
+}
+
+
+
+.progress-java {
+    background: linear-gradient(to right top, #7ac8ec, #756ceb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    color: #65dfc900;
+}
+
+.progress-java::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 70%;
+}
+
+.progress-python {
+    background: linear-gradient(to right top, #7ac8ec, #756ceb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    color: #65dfc900;
+}
+
+.progress-python::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 60%;
+}
+
+.progress-android-studio {
+    background: linear-gradient(to right top, #7ac8ec, #756ceb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    color: #65dfc900;
+}
+
+.progress-android-studio::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 65%;
+}
+
+.progress-spring-boot {
+    background: linear-gradient(to right top, #7ac8ec, #756ceb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    color: #65dfc900;
+}
+
+.progress-spring-boot:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 20%;
+}
+
+.progress-html {
+    background: linear-gradient(to right top, #7ac8ec, #756ceb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    color: #65dfc900;
+}
+
+.progress-html::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 50%;
+}
+
+.progress-css {
+    background: linear-gradient(to right top, #7ac8ec, #756ceb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    color: #65dfc900;
+}
+
+.progress-css::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 50%;
+}
+
+.progress-mysql {
+    background: linear-gradient(to right top, #7ac8ec, #756ceb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    color: #65dfc900;
+}
+
+.progress-mysql::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 30%;
+}
+
+.projects-section {
+    background: var(--primary-color);
+    color: white;
+
+    h2 {
+        margin-bottom: 2.5em;
+    }
+
+    li {
+        background: var(--secondary-color);
+        text-align: center;
+        padding: 2em 1em;
+        width: 40%;
+        margin: 0 auto 5em auto;
+        border-radius: 2em;
+        
+        img {
+            width: 5em;
+            height: 5em;
+            border: 3px solid #006bd6;
+            border-radius: 50%;
+            margin-top: -4.5em;
+
+        }
+    }
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.rps-section {
+
+    
+    background: #292C34;
+    h2 {
+        color: white;
+        margin-bottom: 2em;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .score-board {
+        margin: 20px auto;
+        border: 3px solid white;
+        border-radius: 4px;
+        text-align: center;
+        width: 200px;
+        color: white;
+        font-size: 46px;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .badge {
+        background: #e2584d;
+        color: white;
+        font-size: 14px;
+        padding: 2px 10px;
+    }
+
+    #user-label {
+        position: absolute;
+        top: 30px;
+        left: -25px;
+    }
+    #computer-label {
+        position: absolute;
+        top: 30px;
+        right: -35px;
+    }
+
+    .result {
+        font-size: 40px;
+        color: white;
+    }
+    .result > p {
+        text-align: center;
+        font-weight: bold;    
+    }
+
+    .choices {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .choice {
+        display: inline-block;
+        border: 4px solid white;
+        border-radius: 50%;
+        margin: 0 20px;
+        padding: 10px;
+        width: 10%;
+        transition: all 0.3s ease;
+    }
+
+    .choice:hover {
+            cursor: pointer;
+            background: #5e5f61;   
+    }
+
+    #action-message {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 20px;
+
+    }
+
+    .green-glow {
+        border: 4px solid #4dcc7d;
+        //box-shadow: horizontial vertical offset color;
+        box-shadow: 0 0 10px #31B43a;
+    }
+
+    .red-glow {
+        border: 4px solid #fc121B;
+        box-shadow: 0 0 10px #D01115;
+    }
+
+    .gray-glow {
+        border: 4px solid #464647;
+        box-shadow: 0 0 10px #25292B;
+    }
+
+}
+
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .hero .container {
+        display: flex;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    }
+    
+    h1 {
+        //align-items: center;
+        font-size: 3em;
+    }
+
+    .left-col {
+        //margin: 3em 3em 0 5em;
+        width: 40%;
+        font-size: 3em;
+    }    
+    
+    .hero-img {
+        width: 50%;
+        margin-top: 1em;
+    }
+    
+    .right-col {
+        width: 40%;
+        margin-top: 8em;
+    }
+        //font-size: 1em;
+    
+    .links {
+        width: 40%;
+        margin: 0;
+        padding: 0;
+        //box-sizing: border-box;
+        align-items: center;
+        li {
+            display: block;
+            a {
+                display: flex;
+                margin: 0;
+                padding: 0;
+            
+            
+            h2 {
+                display: flex;  
+                //color: black;
+            }
+        }
+        }
+    }
+
+
+    .projects-section {
+        h2 {
+            margin-bottom: 5em;
+        }
+
+        ul {
+            display: flex;   
+            li {
+                background: var(--secondary-color);
+                text-align: center;
+                padding: 2em 1em;
+                width: 80%;
+                margin: 0 auto 5em auto;
+                border-radius: 2em;
+                
+                img {
+                    width: 10em;
+                    height: 10em;
+                    border: 3px solid #006bd6;
+                    border-radius: 50%;
+                    margin-top: -4.5em;
+        
+                }
+            }
+            li {
+                margin: 0 1em;
+            
+            }   
+        }   
+    }
+}
