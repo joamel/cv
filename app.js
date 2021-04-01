@@ -22,8 +22,8 @@ function convertToWord(letter) {
 }
 
 function win(userChoice, compChoice) {
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallCompWord = "comp".fontsize(3).sub();
+    const smallUserWord = "user".fontsize(2).sub();
+    const smallCompWord = "comp".fontsize(2).sub();
     const userChoise_div = document.getElementById(userChoice);
     userScore++;
     userScore_span.innerHTML = userScore;
@@ -39,10 +39,10 @@ function win(userChoice, compChoice) {
 
 
 function lose(userChoice, compChoice) {
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallCompWord = "comp".fontsize(3).sub();
+    const smallUserWord = "user".fontsize(2).sub();
+    const smallCompWord = "comp".fontsize(2).sub();
     const userChoise_div = document.getElementById(userChoice);
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses  ${convertToWord(compChoice)}${smallCompWord}. You lost! `;
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} lose to ${convertToWord(compChoice)}${smallCompWord}. You lost! `;
     compScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
@@ -51,8 +51,8 @@ function lose(userChoice, compChoice) {
 }
 
 function draw(userChoice, compChoice) {
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallCompWord = "comp".fontsize(3).sub();
+    const smallUserWord = "user".fontsize(2).sub();
+    const smallCompWord = "comp".fontsize(2).sub();
     const userChoise_div = document.getElementById(userChoice);
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals  ${convertToWord(compChoice)}${smallCompWord}. It's a draw! `;
     userChoise_div.classList.add('gray-glow');
